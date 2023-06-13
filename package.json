@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "server": "node server.cjs",
-    "start": "concurrently \"npm run build\" \"npm run server\"",
+    "server": "json-server --watch db.json --port 8080",
     "build": "astro build",
+    "start": "concurrently \"npm run build\" \"npm run server\"",
     "preview": "astro preview",
     "astro": "astro"
   },
